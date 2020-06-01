@@ -1,10 +1,10 @@
-import Commons.Configaration;
+import Commons.Configuration;
 import org.junit.Before;
 import org.junit.Test;
 import pageObject.PizzaPage;
 import ru.yandex.qatools.allure.annotations.Title;
 
-public class PizzaPageTest extends Configaration {
+public class PizzaPageTest extends Configuration {
 
     PizzaPage pizzaPage = new PizzaPage(driver);
 
@@ -15,7 +15,7 @@ public class PizzaPageTest extends Configaration {
 
     @Title("Medium size pizza can be added to the busket")
     @Test
-    public void verifyselectingAMendiumPizzaFromPizzaPage() throws InterruptedException {
+    public void verifySelectingAMediumPizzaFromPizzaPage() throws InterruptedException {
         pizzaPage.selectingChickenHotPizza();
         pizzaPage.waitFor(2000);
         pizzaPage.selectSizePizza();
@@ -28,8 +28,8 @@ public class PizzaPageTest extends Configaration {
         pizzaPage.waitFor(2000);
         pizzaPage.clickOnAdd();
         pizzaPage.waitFor(10000);
-        pizzaPage.verifyAddingOrderOnTheBusket();
-        pizzaPage.clickOnProcceedToCheckOut();
+        pizzaPage.verifyAddingOrderOnTheBasket();
+        pizzaPage.clickOnProceedToCheckOut();
         pizzaPage.verifyQuantity();
     }
 
@@ -39,10 +39,10 @@ public class PizzaPageTest extends Configaration {
         pizzaPage.verifyDropDownDefaultValue();
     }
 
-    @Title("Vegitarian option can be selected from dropdown")
+    @Title("Vegetarian option can be selected from dropdown")
     @Test
     public void verifySelectingAnOptionFromDropdown(){
-        pizzaPage.selectVegitarianOptionFromDropdown();
-        pizzaPage.verifyVegitarianOptionisSelected();
+        pizzaPage.selectVegetarianOptionFromDropdown();
+        pizzaPage.verifyVegetarianOptionIsSelected();
     }
 }

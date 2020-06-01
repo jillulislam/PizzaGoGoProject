@@ -1,4 +1,4 @@
-import Commons.Configaration;
+import Commons.Configuration;
 import org.junit.Before;
 import org.junit.Test;
 import pageObject.AccountPage;
@@ -6,7 +6,7 @@ import pageObject.LoginPage;
 import pageObject.MenuPage;
 import ru.yandex.qatools.allure.annotations.Title;
 
-public class LoginPageTest extends Configaration {
+public class LoginPageTest extends Configuration {
 
     LoginPage loginPage = new LoginPage(driver);
     AccountPage accountPage = new AccountPage(driver);

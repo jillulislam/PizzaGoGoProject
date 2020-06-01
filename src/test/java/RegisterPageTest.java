@@ -1,11 +1,11 @@
-import Commons.Configaration;
+import Commons.Configuration;
 import org.junit.Before;
 import org.junit.Test;
 import pageObject.MenuPage;
 import pageObject.RegisterPage;
 import ru.yandex.qatools.allure.annotations.Title;
 
-public class RegisterPageTest extends Configaration {
+public class RegisterPageTest extends Configuration {
 
     //why cant i see the property of registerclass after making its object?
     RegisterPage registerPage = new RegisterPage(driver);

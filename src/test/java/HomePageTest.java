@@ -1,14 +1,13 @@
-import Commons.Configaration;
+import Commons.Configuration;
 import Commons.Footer;
 import Commons.Header;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import pageObject.*;
 import ru.yandex.qatools.allure.annotations.Title;
 
 
-public class HomePageTest extends Configaration {
+public class HomePageTest extends Configuration {
 
     Homepage homepage = new Homepage(driver);
     Header header = new Header(driver);

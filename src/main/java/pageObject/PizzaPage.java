@@ -25,7 +25,7 @@ public class PizzaPage extends CommonActions {
     WebElement chickenHotPizza;
 
     @FindBy(id = "prods_631")
-    WebElement vegiterianPizza;
+    WebElement vegetarianPizza;
 
     @FindBy(id = "pizza_size")
     WebElement dropDown_pizzaSize;
@@ -76,7 +76,7 @@ public class PizzaPage extends CommonActions {
     }
 
     @Step
-    public void clickOnProcceedToCheckOut(){
+    public void clickOnProceedToCheckOut(){
         clickOn(btn_proceedToCheckout);
     }
 
@@ -101,8 +101,8 @@ public class PizzaPage extends CommonActions {
     }
 
     @Step
-    public void verifyAddingOrderOnTheBusket(){
-        VerifyTests.verify("ADDED TO ORDER", getTextOfOrderAddedMsg());
+    public void verifyAddingOrderOnTheBasket(){
+        VerifyTests.verify("ADDED TO ORDER!", getTextOfOrderAddedMsg());
     }
 
     @Step
@@ -122,12 +122,12 @@ public class PizzaPage extends CommonActions {
     }
 
     @Step
-    public void selectVegitarianOptionFromDropdown(){
+    public void selectVegetarianOptionFromDropdown(){
         selectByValue(dropDownList,"5");
     }
 
     @Step
-    public void verifyVegitarianOptionisSelected(){
+    public void verifyVegetarianOptionIsSelected(){
         VerifyTests.verify("Vegetarian",defaultTextOfDropDownList());
     }
 }
