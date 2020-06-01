@@ -12,7 +12,7 @@
         <java.version>1.8</java.version>
         <selenium.version>3.141.59</selenium.version>
         <testSuite>PizzaPageTest.class</testSuite>
-        <jackson.version>2.9.7</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
         <jetty.http.port>9300</jetty.http.port>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <allure.version>1.5.4</allure.version>
