@@ -1,11 +1,11 @@
-import Commons.Configaration;
+import Commons.Configuration;
 import org.junit.Before;
 import org.junit.Test;
 import pageObject.MenuPage;
 import pageObject.PizzaPage;
 import ru.yandex.qatools.allure.annotations.Title;
 
-public class MenuPageText extends Configaration {
+public class MenuPageText extends Configuration {
 
     MenuPage menuPage = new MenuPage(driver);
     PizzaPage pizzaPage = new PizzaPage(driver);

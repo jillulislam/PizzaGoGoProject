@@ -1,5 +1,6 @@
 package Commons;
 
+import core.AllureReportConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -9,8 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class Configaration {
-    public static WebDriver driver;
+public class Configuration extends AllureReportConfig {
 
     public static void openChrome() {
         WebDriverManager.chromedriver().setup();
@@ -34,6 +34,5 @@ public class Configaration {
     @AfterClass
     public static void closeBrowser(){
         driver.close();
-        driver.quit();
     }
 }
